@@ -65,9 +65,26 @@ namespace github
         }
 
 
+        static void F05(int[] arr)
+        {
+            Console.WriteLine($"Ennyi db pozitív szám van a tömbben: {F02(arr)}");
+
+            Console.WriteLine($"A tömb elemeinek átlaga: {F03(arr):F4}");
+
+            Console.WriteLine("A tömbből alkotott páratlan számok: ");
+
+            foreach (var item in F04(arr))
+            {
+                Console.Write($"{item}, ");
+            }
+
+            Console.WriteLine();
+        }
+
 
         static void Main(string[] args)
         {
+
         }
     }
 }
