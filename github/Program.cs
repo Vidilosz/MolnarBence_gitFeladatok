@@ -45,6 +45,26 @@ namespace github
 
         }
 
+        static int[] F04(int[] arr)
+        {
+            int[] paratlanok = new int[10];
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % 2 == 0)
+                {
+                    paratlanok[i] = arr[i] + 1;
+                }
+                else
+                {
+                    paratlanok[i] = arr[i];
+                }
+            }
+
+            return paratlanok;
+        }
+
+
 
         static void Main(string[] args)
         {
