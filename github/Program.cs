@@ -33,6 +33,18 @@ namespace github
             return szamlalo;
         }
 
+        static double F03(int[] arr)
+        {
+            double atlag = 0.0;
+
+            for (int i = 0;i < arr.Length;i++)
+            {
+                atlag += arr[i];
+            }
+            return atlag/arr.Length;
+
+        }
+
 
         static void Main(string[] args)
         {
